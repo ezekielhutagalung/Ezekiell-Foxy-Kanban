@@ -1,0 +1,49 @@
+
+.card{
+  height: 370px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(245, 245, 245, .3);
+  }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(-40deg,#7F7FD5,#86A8E7,#91EAE4);
+
+  background-blend-mode: normal, lighten, soft-light;
+  animation: color-change-5x 8s linear infinite alternate both;
+}
+
+.carousel-item{
+  height: 250px;
+  width: 250px;
+}
+
+#login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@keyframes color-change-5x {
+  0% {
+    background: #7F7FD5;
+  }
+  25% {
+    background: #86A8E7;
+  }
+  50% {
+    background: #7F7FD5;
+  }
+  75% {
+    background: #86A8E7;
+  }
+  100% {
+    background: #86A8E7;
+  }
+}
+
