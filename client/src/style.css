@@ -1,0 +1,147 @@
+
+.card{
+  height: 370px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(245, 245, 245, .3);
+  }
+
+body {
+  width:100%;
+  height:100vh;
+  background-image: url('fantasy fox.jpg');
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 110% 110%;
+  background-position: center center;
+  animation: shrink 12s infinite alternate;
+  
+}
+
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+
+  10% {
+    background-size: 109% 109%;
+  }
+
+  20% {
+    background-size: 108% 108%;
+  }
+
+  30% {
+    background-size: 107% 107%;
+  }
+
+  60% {
+    background-size: 105% 105%;
+  }
+
+  80% {
+    background-size: 103% 103%;
+  }
+
+  
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.api img{
+  width: 30px;
+  animation: api 7s linear infinite ;
+}
+
+.api{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes api {
+   0%{
+     transform: translateY(0);
+     opacity: 0;
+   }
+   50%{
+    
+    opacity: 1;
+  }
+  70%{
+    
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+
+}
+
+
+.api img:nth-child(1){
+  width: 20px;
+   animation-delay: 2s;
+}
+
+.api img:nth-child(2){
+  animation-delay: 3s;
+}
+
+
+.api img:nth-child(3){
+  width: 35px;
+  animation-delay: 8s;
+}
+
+
+ .api img:nth-child(4){
+  animation-delay: 4s;
+}
+
+.api img:nth-child(5){
+  animation-delay: 3s;
+}
+
+.api img:nth-child(6){
+  width: 50px;
+  animation-delay: 7s;
+} 
+
+.carousel-item{
+  height: 250px;
+  width: 250px;
+}
+
+#login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* @keyframes color-change-5x {
+  0% {
+    background: #7F7FD5;
+  }
+  25% {
+    background: #86A8E7;
+  }
+  50% {
+    background: #7F7FD5;
+  }
+  75% {
+    background: #86A8E7;
+  }
+  100% {
+    background: #86A8E7;
+  }
+} */
+
