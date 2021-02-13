@@ -14508,11 +14508,13 @@ var _default = {
       emailLogin: "",
       passwordLogin: "",
       clientId: '27286094653-tlddvm226obl74qmi7u2h5fpajivomg2.apps.googleusercontent.com',
-      url: 'http://localhost:3000/'
+      url: 'https://helsinkikanbanezekiel.herokuapp.com/'
     };
   },
   methods: {
     loginSubmit: function loginSubmit() {
+      console.log(this.emailLogin);
+      console.log(this.passwordLogin);
       var obj = {
         email: this.emailLogin,
         password: this.passwordLogin
@@ -16684,7 +16686,7 @@ var _default = {
   data: function data() {
     return {
       message: 'Hello world',
-      urlServer: "http://localhost:3000",
+      urlServer: "https://helsinkikanbanezekiel.herokuapp.com",
       currentPage: 'home',
       categories: [],
       dataTask: {}
@@ -16710,7 +16712,7 @@ var _default = {
       } else {
         (0, _axios.default)({
           method: 'POST',
-          url: this.urlServer + '/login',
+          url: "https://helsinkikanbanezekiel.herokuapp.com/login",
           data: {
             email: payload.email,
             password: payload.password
@@ -17030,7 +17032,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62690" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59448" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

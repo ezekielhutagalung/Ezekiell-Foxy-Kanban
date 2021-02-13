@@ -116,11 +116,13 @@ export default {
        emailLogin:"",
        passwordLogin:"",
 	   clientId:'27286094653-tlddvm226obl74qmi7u2h5fpajivomg2.apps.googleusercontent.com',
-	   url:'http://localhost:3000/'
+	   url:'https://helsinkikanbanezekiel.herokuapp.com/'
      }
   },
   methods:{
     loginSubmit(){
+		console.log(this.emailLogin)
+		console.log(this.passwordLogin)
           const obj = {
             email: this.emailLogin, 
             password: this.passwordLogin

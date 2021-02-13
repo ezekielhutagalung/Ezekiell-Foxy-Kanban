@@ -36,7 +36,7 @@ export default {
 data() {
     return {
       message: 'Hello world',
-      urlServer:"http://localhost:3000",
+      urlServer:"https://helsinkikanbanezekiel.herokuapp.com",
       currentPage : 'home',
       categories: [],
       dataTask: {},
@@ -61,7 +61,7 @@ data() {
        }else{
          axios({
            method: 'POST',
-             url:  this.urlServer + '/login',
+             url:  "https://helsinkikanbanezekiel.herokuapp.com/login",
                data: {
                   email: payload.email,
                   password: payload.password
