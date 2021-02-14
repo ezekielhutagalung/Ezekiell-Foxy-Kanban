@@ -16720,7 +16720,6 @@ var _default = {
         }).then(function (_ref) {
           var access_token = _ref.data.access_token;
           localStorage.setItem('access_token', access_token);
-          console.log(access_token);
           _this.currentPage = "content";
         }).catch(function (err) {
           _sweetalert.default.fire({
@@ -16782,7 +16781,7 @@ var _default = {
         _sweetalert.default.fire({
           icon: 'error',
           title: 'Oops...',
-          text: 'error !!'
+          text: 'this is not your task sweetheart !!💋'
         });
 
         if (err.response) {
@@ -16824,6 +16823,12 @@ var _default = {
 
         _this5.currentPage = "content";
       }).catch(function (err) {
+        _sweetalert.default.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'this is not your task sweetheart !!💋'
+        });
+
         if (err.response) {
           console.log(err.response.data);
         }
@@ -17032,7 +17037,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59448" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63590" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

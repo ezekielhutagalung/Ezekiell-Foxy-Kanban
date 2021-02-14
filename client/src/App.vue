@@ -70,7 +70,7 @@ data() {
                     access_token
                 }}) => {
                    localStorage.setItem('access_token', access_token)
-                   console.log(access_token)
+                
                   this.currentPage = "content"
                 }).catch(err => {
            Swal.fire({
@@ -135,7 +135,7 @@ data() {
                     Swal.fire({
                         icon: 'error',
                         title: 'Oops...',
-                        text: 'error !!'
+                        text: 'this is not your task sweetheart !!💋'
                     })
                     if (err.response) {
                    console.log(err.response.data);
@@ -176,6 +176,12 @@ data() {
           this.currentPage= "content"
         })
         .catch((err) => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'this is not your task sweetheart !!💋' 
+          })
+
           if (err.response) {
             console.log(err.response.data);
           }
@@ -212,6 +218,7 @@ data() {
         },
 
         taskEdit(payload){
+          
            axios({
              method: 'PUT',
              url: this.urlServer + '/tasks/' + this.dataTask.id,
