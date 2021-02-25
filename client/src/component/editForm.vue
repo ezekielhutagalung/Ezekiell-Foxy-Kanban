@@ -18,7 +18,7 @@
                                 <label for="message-text" class="col-form-label">Description:</label>
                                 <textarea class="form-control" v-model="taskData.description"></textarea>
                             </div>
-                  
+                            <button type="submit" class="btn btn-primary">Save changes</button>
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Done Editing</button>
                         </form>
                     </div>
@@ -31,24 +31,18 @@
 <script>
 export default {
    props: ['taskData'],
-   data(){
-       return{
-        name: '',
-        description: ''
-       }
-   },
    methods: {
 
    taskEdit(){
       let obj= {
-          name: this.name,
-          description: this.description
+          name: this.taskData.name,
+          description: this.taskData.description
       }
 
       return this.$emit('taskEdit', obj)
 
    }
-   }
+   },
 
 }
 </script>

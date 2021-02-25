@@ -233,6 +233,11 @@ data() {
              this.fetchTask()
              this.currentPage = 'content'
            }) .catch(err=>{
+             Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'this is not your task honey💋' 
+                    })
              console.log(err.response)
            })
 

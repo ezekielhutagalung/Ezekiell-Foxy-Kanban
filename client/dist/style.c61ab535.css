@@ -10,9 +10,9 @@
 body {
   width:100%;
   height:100vh;
-  background-image: url('/fantasy fox.fc59d65a.jpg');
+  background-image: url('/3bbe2e399e2de05ca4e14247d9e3e8d516af713c.fb2f1207.jpg');
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;
   background-repeat: no-repeat;
   background-size: 110% 110%;
   background-position: center center;

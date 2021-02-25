@@ -15507,17 +15507,11 @@ exports.default = void 0;
 //
 var _default = {
   props: ['taskData'],
-  data: function data() {
-    return {
-      name: '',
-      description: ''
-    };
-  },
   methods: {
     taskEdit: function taskEdit() {
       var obj = {
-        name: this.name,
-        description: this.description
+        name: this.taskData.name,
+        description: this.taskData.description
       };
       return this.$emit('taskEdit', obj);
     }
@@ -15633,6 +15627,15 @@ exports.default = _default;
                       }
                     })
                   ]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "submit" }
+                    },
+                    [_vm._v("Save changes")]
+                  ),
                   _vm._v(" "),
                   _c(
                     "button",
@@ -16879,6 +16882,12 @@ var _default = {
 
         _this7.currentPage = 'content';
       }).catch(function (err) {
+        _sweetalert.default.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'this is not your task honey💋'
+        });
+
         console.log(err.response);
       });
     },
@@ -17037,7 +17046,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54668" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53088" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

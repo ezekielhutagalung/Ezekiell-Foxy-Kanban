@@ -12,7 +12,7 @@ body {
   height:100vh;
   background-image: url('./pictures/3bbe2e399e2de05ca4e14247d9e3e8d516af713c.jpg');
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;
   background-repeat: no-repeat;
   background-size: 110% 110%;
   background-position: center center;
